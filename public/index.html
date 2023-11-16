@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width,initial-scale=1'>
+
+	<title>Helix Music App</title>
+</head>
+
+<body>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel='icon' type='image/png' href='/favicon.png'>
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='stylesheet' href='/build/bundle.css'>
+	<script defer src='/build/bundle.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+
+
+    <style>
+			@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+			@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+			@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-Regular.ttf') format('truetype');
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-Medium.ttf') format('truetype');
+				font-weight: 500;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-Semibold.ttf') format('truetype');
+				font-weight: 600;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-Bold.ttf') format('truetype');
+				font-weight: bold;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-Heavy.ttf') format('truetype');
+				font-weight: 800;
+				font-style: normal;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-Italic.ttf') format('truetype');
+				font-weight: normal;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-MediumItalic.ttf') format('truetype');
+				font-weight: 500;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-SemiboldItalic.ttf') format('truetype');
+				font-weight: 600;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-BoldItalic.ttf') format('truetype');
+				font-weight: bold;
+				font-style: italic;
+			}
+			@font-face {
+				font-family: 'SF Pro Text';
+				src: url('/static/fonts/SFProText-HeavyItalic.ttf') format('truetype');
+				font-weight: 800;
+				font-style: italic;
+			}
+
+
+			*,
+			*::before,
+			*::after {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+				user-select: none;
+				-webkit-font-smoothing: antialiased;
+				-moz-font-smoothing: none;
+			}
+
+			:root {
+				--sys-bg: #FFFFFFFF;
+				--sys-secondary-bg: #F2F2F7FF;
+				--sys-tertiary-bg: #FFFFFFFF;
+				--sys-grouped-bg: #F2F2F7FF;
+				--sys-secondary-grouped-bg: #FFFFFFFF;
+				--sys-tertiary-grouped-bg: #F2F2F7FF;
+				--sys-blue: #0A84FFFF;
+				--placeholder-color: #EBEBF54D;
+
+				/* Dark mode */
+				--sys-bg: #000000FF;
+				--sys-secondary-bg: #1C1C1EFF;
+				--sys-tertiary-bg: #2C2C2EFF;
+				--sys-grouped-bg: #000000FF;
+				--sys-secondary-grouped-bg: #1C1C1EFF;
+				--sys-tertiary-grouped-bg: #2C2C2EFF;
+				--sys-blue: #0A84FFFF;
+				--placeholder-color: #EBEBF54D;
+			}
+		
+			.app {
+				position: absolute;
+				display: block;
+				overflow: hidden;
+				inset: 0;
+				background-image: url('/static/bg.jpg');
+				font-family: 'SF Pro Text';
+			}
+			.bg {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-image: url('/static/bg.png');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				z-index: -2;
+			}
+		</style>
+
+  </head>
+  <body>
+    <div id="app"></div>
+	<div class="bg"></div>
+	<img src="./static/case.png" style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%); height: 681px; aspect-ratio: 331/681; z-index: -2;" alt="" class="case">
+  </body>
+</html>
